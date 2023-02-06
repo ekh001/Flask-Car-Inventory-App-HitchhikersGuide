@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+<!-- Main Header -->
+<section class="bg-info text-light text-center shadow" id="menu">
+    <div class="container p-5 bg-info">
+        <div class="row">
+            <div class="d-md-flex bg-info align-items-center justify-content-evenly">
+                <h1 class="col text-center animation fadeInLeft"><br>Car Database:
+                <br>The Hitchhiker's Guide to your Ford Galaxy</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Intro -->
+<section class="text-center">
+    <div class="container p-5">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="../../static/images/landing_page_image.jpg" class="img-fluid p-5" alt="Lined up cars in garage" id="index_img">
+                <div class="center text-lg" id="intro-text">Like a garage, but on the internet.</div>
+            </div>
+
+            <div>
+                <button class="btn btn-primary"><a href="{{ url_for('auth.signup') }}">Get Started</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- Database Content Explanation -->
+<section class="features-tile">
+    <div class="d-flex align-items-center justify-content-center">
+        <h3>Our Database Allows You To Store Your Car's</h3>
+    </div>
+    <div class="main-tile-dimension">
+        <div class="features">
+            <div class="image-container-features">
+                <img src="../../static/images/makemodel2.jpg" alt="#">
+            </div>
+            <div class="perk-name">
+                <h2>Make and Model</h2>
+            </div>
+            <div class="perk-info">Did you forget the make and model of your car, but now you have to answer an internet security question? We've got you covered! </div>
+        </div>
+        <div class="features">
+            <div class="image-container-features">
+                <img src="../../static/images/carcolor.jpg" alt="#">
+            </div>
+            <div class="perk-name">
+                <h2>Color</h2>
+            </div>
+            <div class="perk-info">Has your car been buried under the snow for so long that you've forgotten what color it is? We got you. </div>
+        </div>
+        <div class="features">
+            <div class="image-container-features">
+                <img src="../../static/images/nickname.jpg" alt="#">
+            </div>
+            <div class="perk-name">
+                <h2>Nickname</h2>
+            </div>
+            <div class="perk-info">This database could probably have added a more useful or informative category, right? However, the database developer is, unfortunately, not terribly interested in cars, and couldn't think of any at the time of creation. She does, however, tend to name her steel stallions...now you have the same opportunity to engage in some personification! </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
